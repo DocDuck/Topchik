@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-export default function Home() {
+export default function Home(): JSX.Element {
+  const x = 1;
   return (
     <div className={styles.container}>
       <Head>
@@ -46,6 +47,7 @@ export default function Home() {
           >
             <h2>Deploy &rarr;</h2>
             <p>
+              {x}
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
@@ -65,5 +67,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
